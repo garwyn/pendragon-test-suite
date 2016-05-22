@@ -21,9 +21,9 @@ describe 'The website' do
     end
 
     it 'should have the correct links' do
-      expect(find(dropDownMenu)).to have_text "Home"
-      expect(find(dropDownMenu)).to have_text "Portfolio"
-      expect(find(dropDownMenu)).to have_text "Contact Us"
+      expect(find(dropDownMenu)).to have_link "Home"
+      expect(find(dropDownMenu)).to have_link "Portfolio"
+      expect(find(dropDownMenu)).to have_link "Contact Us"
       expect(find(dropDownMenu)).to have_link("Shop", :href => etsyShopUrl)
     end
   end
